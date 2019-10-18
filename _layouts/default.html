@@ -13,7 +13,9 @@
             <div class="card p-3 border-0">
               <img src="{{ item.image }}" class="card-img-top" alt="Image of {{ item.title }}">
               <div class="card-body">
-                <h5 class="card-title">{{ item.title }}</h5>
+                <a href="{{ item.url }}" class="text-reset">
+                  <h5 class="card-title">{{ item.title }}</h5>
+                </a>
                 <p class="card-text">{{ item.excerpt }}</p>
               </div>
             </div>
@@ -29,25 +31,28 @@
               </h3>
             </div>
           </div>
-          <!-- START This is the item that repeats -->
+
           {% for collection in site.collections %}
             {% if collection.label != 'posts' %}
               <div class="card mb-3 border-0">
-                <div class="row no-gutters">
+                <div class="row no-gutters mb-2">
                   <div class="col-md-4">
                     <img src="{{ collection.docs.last.image }}" class="card-img h-75 w-75 m-4 rounded-circle" alt="Image of {{ collection.docs.last.title }}">
                   </div>
                     <div class="col-md-8">
                       <div class="card-body">
                         <h5 class="card-title">{{ collection.label | capitalize }}</h5>
-                        <p class="card-text">{{ collection.docs.last.title }}</p>
+                        <p class="card-text">
+                          <a href="{{ collection.docs.last.url }}" class="text-reset">
+                            {{ collection.docs.last.title }}
+                          </a>
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               {% endif %}
             {% endfor %}
-            <!-- END This is the item that repeats -->
 
           </div>
         <div class="col-md-6">
@@ -58,24 +63,28 @@
               </h3>
             </div>
           </div>
-          <!-- START This is the item that repeats -->
-          <div class="card mb-3 border-0">
-            <div class="row no-gutters">
-              <div class="col-md-1">
-                <div class="card-body">
-                  <h3 class="card-title d-flex justify-content-center align-content-center flex-wrap">1.</h3>
-                </div>
-              </div>
-                <div class="col-md-10">
+
+          {% assign posts= site.articles | concat: site.letters | concat: site.speeches | concat: site.tutorials %}
+          {% assign top_posts = posts | sort: "rating" | reverse | slice: 0, 5 %}
+          {% for post in top_posts %}
+            <div class="card mb-3 border-0">
+              <div class="row no-gutters">
+                <div class="col-md-1">
                   <div class="card-body">
-                    <h5 class="card-title">card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h3 class="card-title d-flex justify-content-center align-content-center flex-wrap">{{ forloop.index}}.</h3>
+                  </div>
+                </div>
+                  <div class="col-md-10">
+                    <div class="card-body">
+                      <h3 class="card-title">
+                        <a href="{{ post.url }}" class="text-reset">{{ post.title }}</a>
+                      </h3>
+                      <p class="card-text"><small class="text-muted">{{ post.collection | capitalize }}</small></p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- END This is the item that repeats -->
+            {% endfor %}
         </div>
       </section>
 
