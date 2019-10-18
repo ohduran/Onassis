@@ -3,8 +3,8 @@ layout: post
 title:  "Evolution du journal"
 author: Jean-Paul Marat
 date:   1793-03-19
-image: https://tomaszjanickiphoto.co.uk/wp-content/gallery/black-white/700_8312.JPG
-keywords: Freedom and liberty
+image: http://hdblackwallpaper.com/wallpaper/2015/07/black-and-white-landscape-photography-1-background-wallpaper.jpg
+rating: 4
 ---
 
 At the outbreak of the Revolution, wearied by the persecutions that I had experienced for so long a time at the hands of the Academy of Sciences, I eagerly embraced the occasion that presented itself of defeating my oppressors and attaining my proper position. I came to the Revolution with my ideas already formed, and I was so familiar with the principles of high politics that they had become commonplaces for me. Having had greater confidence in the mock patriots of the Constituent Assembly than they deserved, I was surprised at their pettiness, their lack of virtue. Believing that they needed light, I entered into correspondence with the most famous deputies, notably with Chapelier, Mirabeau, and Barnave. Their stubborn silence on all my letters soon proved to me that though they needed light, they cared little to be enlightened. I adopted the course of publishing my ideas by means of the press. I founded the Ami du Peuple.

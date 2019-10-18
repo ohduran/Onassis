@@ -8,7 +8,8 @@
       {% include header.html %}
       <section class="row m-2">
         <div class="card-columns">
-          {% for item in site.articles %}
+          {% assign articles = site.articles | slice: 0, 5 %}
+          {% for item in articles %}
             <div class="card p-3 border-0">
               <img src="{{ item.image }}" class="card-img-top" alt="Image of {{ item.title }}">
               <div class="card-body">
@@ -24,27 +25,30 @@
           <div class="row">
             <div class="col-md-12">
               <h3 class="d-flex justify-content-center border-bottom">
-                <span class="m-1">Sections</span>
+                <span class="m-1">Categories</span>
               </h3>
             </div>
           </div>
           <!-- START This is the item that repeats -->
-          <div class="card mb-3 border-0">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="card-img h-75 w-75 m-4 rounded-circle" alt="...">
-              </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          {% for collection in site.collections %}
+            {% if collection.label != 'posts' %}
+              <div class="card mb-3 border-0">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="{{ collection.docs.last.image }}" class="card-img h-75 w-75 m-4 rounded-circle" alt="Image of {{ collection.docs.last.title }}">
+                  </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">{{ collection.label | capitalize }}</h5>
+                        <p class="card-text">{{ collection.docs.last.title }}</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              {% endif %}
+            {% endfor %}
             <!-- END This is the item that repeats -->
-            
+
           </div>
         <div class="col-md-6">
           <div class="row">
@@ -74,7 +78,7 @@
             <!-- END This is the item that repeats -->
         </div>
       </section>
-      
+
       <section class="row m-2">
         <div class="col-md-12">
           <div class="row">
@@ -90,7 +94,7 @@
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bpmNgPzklmQ?rel=0" allowfullscreen></iframe>
               </div>
             </div>
-              
+
           </div>
         </div>
       </section>

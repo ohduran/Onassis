@@ -45,3 +45,9 @@ plugins:
 collections:
   articles:
     output: true
+  letters:
+    output: true
+  speeches:
+    output: true
+  tutorials:
+    output: true
