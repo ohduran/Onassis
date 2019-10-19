@@ -5,6 +5,7 @@ author: Dr. Martin Luther King
 date:   1968-08-23 20:20:35 +0200
 image: http://www.technosamrat.com/wp-content/uploads/2012/05/Black-and-White-Landscape-Wallpaper.jpg
 rating: 3
+description: Dr. King's speech to end discrimination once and for all in America.
 ---
 I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation. Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon light of hope to millions of Negro slaves who had been seared in the flames of withering injustice. It came as a joyous daybreak to end the long night of their captivity.
 

@@ -5,6 +5,7 @@ author: John F. Kennedy
 date:   1963-06-26 20:20:35 +0200
 image: https://i.ytimg.com/vi/JAAOEC2fV_8/maxresdefault.jpg
 rating: 3
+description: All free men, wherever they may live, are citizens of Berlin - says JFK.
 ---
 I am proud to come to this city as the guest of your distinguished Mayor, who has symbolized throughout the world the fighting spirit of West Berlin. And I am proud -- And I am proud to visit the Federal Republic with your distinguished Chancellor who for so many years has committed Germany to democracy and freedom and progress, and to come here in the company of my fellow American, General Clay, who -- who has been in this city during its great moments of crisis and will come again if ever needed.
 

@@ -1,0 +1,16 @@
+<section class="row m-2">
+  <div class="card-columns">
+    {% assign articles = site.articles | slice: 0, 6 %}
+    {% for item in articles %}
+      <div class="card p-3 border-0 zoom">
+        <img src="{{ item.image }}" class="card-img-top" alt="Image of {{ item.title }}">
+        <div class="card-body">
+          <a href="{{ item.url | prepend: site.baseurl | prepend: site.url }}" class="text-reset">
+            <h5 class="card-title">{{ item.title }}</h5>
+          </a>
+          <p class="card-text">{{ item.description }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

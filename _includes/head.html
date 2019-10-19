@@ -12,10 +12,7 @@
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Mansalva&display=swap" rel="stylesheet">
-
-{% if page.layout == 'default' %}
-  <link rel="stylesheet" href="/assets/index.css">
-{% endif %}
+<link rel="stylesheet" href="{{ "/assets/index.css" | prepend: site.baseurl | prepend: site.url }}">
 
 {% if page.title %}
 	<title>{{ page.title }} · {{ site.title }}</title>

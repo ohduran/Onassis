@@ -1,3 +1,16 @@
 ---
 layout: default
 ---
+
+{% include index/columns.html %}
+
+<section class="row m-2">
+  <div class="col-md-6">
+    {% include index/categories.html %}
+  </div>
+  <div class="col-md-6">
+    {% include index/favourites.html %}
+  </div>
+</section>
+
+{% include index/video.html %}

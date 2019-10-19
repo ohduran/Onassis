@@ -4,8 +4,8 @@ title:  "Stay Hungry, Stay Foolish"
 description: Never be satisfied, and always be willing to do the things people say cannot be done
 date:   2005-06-12 20:20:35 +0200
 image: https://s3-us-west-2.amazonaws.com/lightstalking-assets/wp-content/uploads/2017/12/02012123/13-Incredibly-Useful-Articles-on-Black-and-White-Landscape-Photography.jpeg
-image_caption: Steve Jobs at Stanford during his 2005 Commencement speech.
 rating: 1
+description: Steve Jobs at Stanford during his 2005 Commencement speech.
 ---
 I am honored to be with you today at your commencement from one of the finest universities in the world. I never graduated from college. Truth be told, this is the closest I’ve ever gotten to a college graduation. Today I want to tell you three stories from my life. That’s it. No big deal. Just three stories.
 

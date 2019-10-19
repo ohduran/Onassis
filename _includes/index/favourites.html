@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-md-12">
+    <h3 class="d-flex justify-content-center border-bottom">
+      <span class="m-1">Personal Favourites</span>
+    </h3>
+  </div>
+</div>
+
+{% assign posts= site.articles | concat: site.letters | concat: site.speeches | concat: site.tutorials %}
+{% assign top_posts = posts | sort: "rating" | reverse | slice: 0, 5 %}
+{% for post in top_posts %}
+  <div class="card mb-3 border-0">
+    <div class="row no-gutters">
+      <div class="col-md-1">
+        <div class="card-body">
+          <h3 class="card-title d-flex justify-content-center align-content-center flex-wrap">{{ forloop.index}}.</h3>
+        </div>
+      </div>
+        <div class="col-md-10">
+          <div class="card-body">
+            <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="text-reset">
+              <h3 class="card-title">{{ post.title }}</h3>
+            </a>
+            <p class="card-text"><small class="text-muted">{{ post.collection | capitalize }}</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
