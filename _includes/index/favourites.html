@@ -18,7 +18,7 @@
       </div>
         <div class="col-md-10">
           <div class="card-body">
-            <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="text-reset">
+            <a href="{{ post.url | relative_url }}" class="text-reset">
               <h3 class="card-title">{{ post.title }}</h3>
             </a>
             <p class="card-text"><small class="text-muted">{{ post.collection | capitalize }}</small></p>

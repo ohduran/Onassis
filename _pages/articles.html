@@ -9,7 +9,7 @@ permalink: /articles
     <div class="row">
       <div class="col-md-4">
         <div>
-          <a href="{{ last_article.url }}" class="text-reset">
+          <a href="{{ last_article.url | prepend: site.baseurl }}" class="text-reset">
             <h3>{{ last_article.title }}</h3>
           </a>
           <p class="card-text">{{ last_article.excerpt }}</p>
@@ -29,7 +29,7 @@ permalink: /articles
       <div class="row no-gutters">
         <div class="col-md-8">
           <div class="card-body">
-            <a class="text-reset" href="{{ item.url }}">
+            <a class="text-reset" href="{{ item.url | prepend: site.baseurl}}">
               <h5 class="card-title">{{ item.title }}</h5>
             </a>
             <p class="card-text">{{ item.description }}</p>

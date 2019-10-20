@@ -17,7 +17,7 @@
             <div class="card-body">
               <h5 class="card-title">{{ collection.label | capitalize }}</h5>
               <p class="card-text">
-                <a href="{{ collection.docs.last.url }}" class="text-reset">
+                <a href="{{ collection.docs.last.url | prepend: site.baseurl }}" class="text-reset">
                   {{ collection.docs.last.title }}
                 </a>
               </p>

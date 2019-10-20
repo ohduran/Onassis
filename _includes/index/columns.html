@@ -5,7 +5,7 @@
       <div class="card p-3 border-0 zoom">
         <img src="{{ item.image }}" class="card-img-top" alt="Image of {{ item.title }}">
         <div class="card-body">
-          <a href="{{ item.url | prepend: site.baseurl | prepend: site.url }}" class="text-reset">
+          <a href="{{ item.url | prepend: site.baseurl }}" class="text-reset">
             <h5 class="card-title">{{ item.title }}</h5>
           </a>
           <p class="card-text">{{ item.description }}</p>
