@@ -1,0 +1,23 @@
+{% assign posts = include.items | reverse %}
+{% for item in posts %}
+  {% if forloop.index != 1 %}
+  <div class="container border-bottom">
+      <div class="card my-3 border-0">
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <div class="card-body">
+              <a class="text-reset" href="{{ item.url | prepend: site.baseurl}}">
+                <h5 class="card-title">{{ item.title }}</h5>
+              </a>
+              <p class="card-text">{{ item.description }}</p>
+              <p class="card-text"><small class="text-muted">{{ item.date | date_to_long_string }}</small></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="{{item.image}}" class="card-img" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
