@@ -1,6 +1,6 @@
 <section class="row m-2">
   <div class="card-columns">
-    {% assign articles = site.articles | slice: 0, 6 %}
+    {% assign articles = site.articles | reverse | slice: 0, 6 %}
     {% for item in articles %}
       <div class="card p-3 border-0 zoom">
         <img src="{{ item.image }}" class="card-img-top" alt="Image of {{ item.title }}">
@@ -9,6 +9,7 @@
             <h5 class="card-title">{{ item.title }}</h5>
           </a>
           <p class="card-text">{{ item.description }}</p>
+          <p class="card-text"><small class="text-muted">{{ item.date | date_to_long_string }}</small></p>
         </div>
       </div>
     {% endfor %}
