@@ -9,7 +9,7 @@
 
 Copyright (C) 2019 Alvaro Duran, https://www.alvaroduran.com
 
-**The Interesting Times theme for Jekyll** is designed and developed by [Alvaro](https://alvaroduran.com) and it is *free* under [MIT license](https://alvaroduran.mit-license.org/).
+**The Onassis theme for Jekyll** is designed and developed by [Alvaro](https://alvaroduran.com) and it is *free* under [MIT license](https://alvaroduran.mit-license.org/).
 
 <a href="https://patreon.com/alvaroduran" target="_blank">Support me on Patreon</a>
 
