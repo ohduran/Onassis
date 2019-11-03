@@ -19,6 +19,7 @@ email: email@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is the description of my site. For all intents and purposes, it's complete.
 baseurl: "/Onassis" # the subpath of your site, e.g. /blog
+google_analytics: 'UA-131540516-1' # change this to your GA key
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 include: ["_pages"]
 collections_dir: _collections
