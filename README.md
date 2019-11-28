@@ -2,7 +2,7 @@
 
 [Live Demo](https://alvaroduran.com/Onassis) &nbsp; | &nbsp; [Download](https://github.com/ohduran/Onassis/archive/master.zip) &nbsp; | &nbsp; [Support me on Patreon](https://patreon.com/alvaroduran)
 
-![mediumish](assets/images/Onassis.png)
+![Onassis](assets/images/Onassis.png)
 
 
 ### Copyright
