@@ -7,7 +7,9 @@
   <div class="nav-scroller py-1 mb-2">
     <nav class="nav d-flex justify-content-center">
       {% for collection in site.collections %}
-      <a class="p-3 text-uppercase text-muted small" href="{{ collection.label | prepend: "/" | prepend: site.baseurl | prepend: site.url}}">{{ collection.label | capitalize }}</a>
+        {% if collection.label != 'posts' %}
+          <a class="p-3 text-uppercase text-muted small" href="{{ collection.label | prepend: "/" | prepend: site.baseurl | prepend: site.url}}">{{ collection.label | capitalize }}</a>
+        {% endif %}
       {% endfor %}
     </nav>
   </div>
